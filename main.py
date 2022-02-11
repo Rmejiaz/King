@@ -78,6 +78,8 @@ def get_round_scores(players, round_):
 
 def main():
     
+    print("********* KING ***********\n")
+
     players = get_players()
     
     scores = generate_scores()
@@ -89,7 +91,7 @@ def main():
             muestra = int(round_[-1])
             if muestra == 4:
                 muestra = 0
-            print(f"\nReparte {players[reparte]}, pone la muestra {players[muestra]}")
+            print(f"\nReparte  y pone la muestra {players[reparte]}, empieza {players[muestra]}")
         
         scores[round_] = get_round_scores(players, round_)
         
